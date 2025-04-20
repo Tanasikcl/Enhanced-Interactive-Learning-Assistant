@@ -6,7 +6,21 @@ Enhanced Interactive Learning Assistant is an AI-powered tool that personalizes 
 - Optional report feedback and regeneration
 - Export final report as a PDF
 - Dockerized for easy deployment
-- 
+
+## **Tech Stack**
+
+- **Frontend**: Streamlit – Used for building the interactive user interface.
+- **Backend**: Gemini AI – Provides the AI-powered content generation for personalized educational experiences.
+- **Programming Language**: Python – The core language used for backend logic and system operations.
+- **Libraries**:
+  - Streamlit – Framework for creating interactive web applications.
+  - Python-dotenv – To manage environment variables.
+- **Deployment**: Docker – To containerize the application for seamless deployment across environments.
+- **Version Control**: Git & GitHub – For version control and collaborative development.
+
+
+## **Sample Input/Output**
+- These have been attached in the project report pdf uploaded in the repository as well.
 ## ⚙️ Setup Instructions
 
 You can run this project either **locally with Python** or using **Docker**.
