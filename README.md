@@ -25,6 +25,24 @@ Enhanced Interactive Learning Assistant is an AI-powered tool that personalizes 
 
 You can run this project either **locally with Python** or using **Docker**.
 
+### ✅ Option 1: Run with Docker
+#### 1. **Build Docker Image**
+```bash
+Build the Docker image:
+docker build -t vahan-assistant .
+
+#### 2. **Set Up .env File**
+Create a file named .env in the root directory and add your Gemini API key like this:
+GEMINI_API_KEY=your_actual_google_genai_key_here
+⚠️ Note: You must obtain a Google Gemini API key from Google AI Studio.
+
+####3. **Run the Docker Container**
+Make sure your .env file exists in the same directory, then run:
+docker run -p 8501:8501 --env-file .env vahan-assistant
+Open your browser and visit:
+http://localhost:8501
+
+---
 ### ✅ Option 1: Run Locally (Python)
 #### 1. **Clone the Repository**
 ```bash
@@ -46,18 +64,4 @@ GEMINI_API_KEY=your_actual_google_genai_key_here
 Run the app locally using Streamlit:
 streamlit run streamlit_app.py
 Once started, open your browser and go to:
-http://localhost:8501
-
----
-### ✅ Option 2: **Run with Docker**
-
-####1. **Build Docker Image**
-
-Build the Docker image:
-docker build -t vahan-assistant .
-
-####2. **Run the Docker Container**
-Make sure your .env file exists in the same directory, then run:
-docker run -p 8501:8501 --env-file .env vahan-assistant
-Open your browser and visit:
 http://localhost:8501
